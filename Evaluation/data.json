@@ -1,0 +1,1878 @@
+{
+  "webOptions": {
+    "title": "Web网站",
+    "children": [
+      {
+        "name": "基本功能",
+        "count": 4,
+        "title": "注册登录",
+        "children": [
+          {
+            "id": 303,
+            "title": "邮箱",
+            "price": 500,
+            "description": "邮箱注册，邮件包含验证链接，采用第三方邮件发送服务"
+          },
+          {
+            "id": 306,
+            "title": "手机",
+            "price": 500,
+            "description": "手机号注册，手机接收验证码，采用第三方短信发送平台"
+          },
+          {
+            "id": 307,
+            "title": "密码找回",
+            "price": 500,
+            "description": "忘记密码，默认发送邮件链接或手机接收验证码进入密码重置页"
+          },
+          {
+            "id": 324,
+            "title": "邮件通知",
+            "price": 500,
+            "description": "邮件通知"
+          },
+          {
+            "id": 327,
+            "title": "短信通知",
+            "price": 500,
+            "description": "短信通知（按相关规定要求，必须为非销售性质）"
+          },
+          {
+            "id": 367,
+            "title": "商品展示",
+            "price": 2000,
+            "description": "商品列表及详细信息展示"
+          },
+          {
+            "id": 370,
+            "title": "城市切换",
+            "price": 1000,
+            "description": "城市切换，按预定的显示信息不同做调整"
+          },
+          {
+            "id": 393,
+            "title": "分享到第三方平台（微博、QQ空间等）",
+            "price": 500,
+            "description": "调用第三方分享服务接口"
+          },
+          {
+            "id": 396,
+            "title": "论坛社区",
+            "price": 500,
+            "description": "整合第三方服务，包括样式调整和用户信息整合（不包括第三方服务提供的功能之外的功能修改）"
+          },
+          {
+            "id": 398,
+            "title": "普通设计",
+            "price": 5000,
+            "description": "对设计无过高要求"
+          },
+          {
+            "id": 401,
+            "title": "高级设计",
+            "price": 10000,
+            "description": "对设计要求较高或有特殊要求"
+          },
+          {
+            "id": 402,
+            "title": "无（自行提供）",
+            "price": 0,
+            "description": "需求方自行提供"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 4,
+        "title": "第三方登录",
+        "children": [
+          {
+            "id": 308,
+            "title": "微信",
+            "price": 500,
+            "description": "微信授权登录，获取接口提供的基本信息，要求用户完善平台个人资料"
+          },
+          {
+            "id": 310,
+            "title": "QQ",
+            "price": 500,
+            "description": "QQ授权登录，获取接口提供的基本信息，要求用户完善平台个人资料"
+          },
+          {
+            "id": 311,
+            "title": "微博",
+            "price": 500,
+            "description": "微博授权登录，获取接口提供的基本信息，要求用户完善平台个人资料"
+          },
+          {
+            "id": 328,
+            "title": "算法搜索",
+            "price": 500,
+            "description": "基于特定条件的搜索结果顺序"
+          },
+          {
+            "id": 330,
+            "title": "条件筛选",
+            "price": 500,
+            "description": "基于特定条件筛选排序"
+          },
+          {
+            "id": 331,
+            "title": "智能算法推荐",
+            "price": 500,
+            "description": "基于相关内容推荐的搜索结果"
+          },
+          {
+            "id": 371,
+            "title": "优惠券",
+            "price": 1000,
+            "description": "优惠券，包含券码编号，满减或免邮"
+          },
+          {
+            "id": 373,
+            "title": "折扣",
+            "price": 500,
+            "description": "折扣优惠，每个商品定义两个价格，折后价和原价"
+          },
+          {
+            "id": 403,
+            "title": "第三方统计接口",
+            "price": 500,
+            "description": "指定的统计分析接口"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 4,
+        "title": "用户中心",
+        "children": [
+          {
+            "id": 312,
+            "title": "会员首页",
+            "price": 500,
+            "description": "用户信息显示和定制的功能入口"
+          },
+          {
+            "id": 314,
+            "title": "用户资料修改更新",
+            "price": 500,
+            "description": "用户基本信息、详细信息保存和更新，包括邮箱手机解绑等已有功能"
+          },
+          {
+            "id": 315,
+            "title": "第三方登录管理",
+            "price": 500,
+            "description": "解除第三方登录绑定，只保留用户平台登录信息（如有）"
+          },
+          {
+            "id": 316,
+            "title": "修改密码",
+            "price": 500,
+            "description": "输入旧密码及重复输入新密码"
+          },
+          {
+            "id": 317,
+            "title": "通知提醒列表/详情显示",
+            "price": 500,
+            "description": "通知列表显示，点击查看详情，管理后台发送的通知提醒"
+          },
+          {
+            "id": 332,
+            "title": "评论（图文）",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）图片文字评论"
+          },
+          {
+            "id": 374,
+            "title": "积分系统设计及展示",
+            "price": 500,
+            "description": "平台积分系统设计和展示"
+          },
+          {
+            "id": 376,
+            "title": "商城/兑换",
+            "price": 500,
+            "description": "积分商城、兑换规则和商品兑换"
+          },
+          {
+            "id": 405,
+            "title": "默认",
+            "price": 0,
+            "description": "主流分辨率宽度：1280px以上，1920px以下"
+          },
+          {
+            "id": 407,
+            "title": "特殊要求",
+            "price": 2000,
+            "description": "其它自定义显示分辨率宽度，按自定义的类型数量计算"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 4,
+        "title": "主内容展示",
+        "children": [
+          {
+            "id": 318,
+            "title": "网站主内容列表/详情",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）列表展示及详情显示"
+          },
+          {
+            "id": 320,
+            "title": "文本搜索",
+            "price": 500,
+            "description": "对平台主内容（图文或产品等）文字搜索，需要指定搜索字段"
+          },
+          {
+            "id": 321,
+            "title": "排序",
+            "price": 500,
+            "description": "按预定的字段排序"
+          },
+          {
+            "id": 322,
+            "title": "收藏",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）的收藏"
+          },
+          {
+            "id": 323,
+            "title": "评论（文字）",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）的文字评论"
+          },
+          {
+            "id": 334,
+            "title": "工单列表/详情",
+            "price": 500,
+            "description": "工单列表显示，工单详情显示，客服系统默认用第三方服务，跳转到第三方管理界面"
+          },
+          {
+            "id": 336,
+            "title": "在线客服",
+            "price": 500,
+            "description": "网页在线客服，实时聊天"
+          },
+          {
+            "id": 337,
+            "title": "留言",
+            "price": 500,
+            "description": "网页的信息留言"
+          },
+          {
+            "id": 377,
+            "title": "评价系统设计及展示",
+            "price": 500,
+            "description": "评价系统设计和展示"
+          },
+          {
+            "id": 379,
+            "title": "评分评价发布",
+            "price": 500,
+            "description": "对商品的评分和评价的发布，包含文本或图片"
+          },
+          {
+            "id": 380,
+            "title": "评价列表",
+            "price": 500,
+            "description": "评价的列表展示"
+          },
+          {
+            "id": 381,
+            "title": "评价评论",
+            "price": 500,
+            "description": "对评价的评论（回帖跟帖）"
+          },
+          {
+            "id": 408,
+            "title": "默认",
+            "price": 2000,
+            "description": "iPhone 5() 及以上型号、Android系统4.4版本以上，Android手机屏幕尺寸4-6寸之间"
+          },
+          {
+            "id": 410,
+            "title": "特殊要求",
+            "price": 4000,
+            "description": "iPhone 4s及以下型号，Android系统4.4版本以下，Android手机屏幕尺寸大于6寸，小于4寸"
+          }
+        ]
+      },
+      {
+        "name": "高级功能",
+        "count": 10,
+        "title": "通知推送方式",
+        "children": [
+          {
+            "id": 338,
+            "title": "推荐注册",
+            "price": 500,
+            "description": "记录用户之间的推荐关系，根据链接带有的推荐码记录推荐和被推荐者"
+          },
+          {
+            "id": 340,
+            "title": "渠道来源统计",
+            "price": 500,
+            "description": "根据URL地址的特定标记统计渠道流量数据"
+          },
+          {
+            "id": 341,
+            "title": "外链流量统计",
+            "price": 500,
+            "description": "记录网站内的外链跳出的流量统计数据"
+          },
+          {
+            "id": 342,
+            "title": "搜索引擎优化（SEO）",
+            "price": 500,
+            "description": "通过对网站内部调整优化及站外优化，使网站满足搜索引擎收录排名需求"
+          },
+          {
+            "id": 382,
+            "title": "地址管理",
+            "price": 500,
+            "description": "地址列表查看，配送地址管理"
+          },
+          {
+            "id": 384,
+            "title": "物流跟踪",
+            "price": 500,
+            "description": "物流状态查看，接第三方物流查询接口"
+          },
+          {
+            "id": 411,
+            "title": "默认",
+            "price": 0,
+            "description": "IE10及以上，最新版本Chrome/Safari"
+          },
+          {
+            "id": 413,
+            "title": "特殊要求",
+            "price": 4000,
+            "description": "IE10以下，非最新版本Chrome/Safari"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "高级搜索",
+        "children": [
+          {
+            "id": 343,
+            "title": "音乐播放",
+            "price": 500,
+            "description": "音乐链接及播放"
+          },
+          {
+            "id": 345,
+            "title": "音乐列表/专辑",
+            "price": 500,
+            "description": "音乐列表或专辑，随机、顺序、单曲播放"
+          },
+          {
+            "id": 346,
+            "title": "音乐播放记录",
+            "price": 500,
+            "description": "已播放记录"
+          },
+          {
+            "id": 347,
+            "title": "视频播放",
+            "price": 500,
+            "description": "视频链接及播放"
+          },
+          {
+            "id": 348,
+            "title": "视频列表/专辑",
+            "price": 500,
+            "description": "视频列表或专辑顺序播放"
+          },
+          {
+            "id": 349,
+            "title": "视频播放记录",
+            "price": 500,
+            "description": "已播放记录"
+          },
+          {
+            "id": 385,
+            "title": "订单列表/详情",
+            "price": 1000,
+            "description": "订单包含的商品列表和订单详情"
+          },
+          {
+            "id": 387,
+            "title": "订单流程",
+            "price": 2000,
+            "description": "从加入购物车到生成订单的步骤细分"
+          },
+          {
+            "id": 388,
+            "title": "收货标记",
+            "price": 500,
+            "description": "收货确认和标记"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "主内容相关",
+        "children": [
+          {
+            "id": 350,
+            "title": "广告位展示",
+            "price": 500,
+            "description": "网站各个广告位的图片、链接切换显示，例如轮播图"
+          },
+          {
+            "id": 389,
+            "title": "微信支付",
+            "price": 500,
+            "description": "接入微信支付接口"
+          },
+          {
+            "id": 391,
+            "title": "支付宝支付",
+            "price": 500,
+            "description": "接入支付宝支付接口"
+          },
+          {
+            "id": 392,
+            "title": "其它类型",
+            "price": 500,
+            "description": "接入银联或其他支付接口"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "客户服务",
+        "children": [
+          {
+            "id": 352,
+            "title": "图片编辑",
+            "price": 500,
+            "description": "调整图片显示区域、大小"
+          },
+          {
+            "id": 354,
+            "title": "文件上传下载",
+            "price": 500,
+            "description": "限制格式和大小内的文件上传和浏览列表"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "推广",
+        "children": [
+          {
+            "id": 355,
+            "title": "收藏",
+            "price": 500,
+            "description": "商品收藏"
+          },
+          {
+            "id": 357,
+            "title": "充值",
+            "price": 500,
+            "description": "充值到平台账户"
+          },
+          {
+            "id": 358,
+            "title": "取现",
+            "price": 500,
+            "description": "申请取现，是否及时到账要根据平台规则"
+          },
+          {
+            "id": 359,
+            "title": "流水记录",
+            "price": 500,
+            "description": "资金变动记录"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "音乐/视频",
+        "children": [
+          {
+            "id": 360,
+            "title": "附近/周边",
+            "price": 500,
+            "description": "根据用户位置，展示地图上周边相关信息，调用第三方地图接口"
+          },
+          {
+            "id": 362,
+            "title": "实时位置跟踪",
+            "price": 500,
+            "description": "设备实时位置跟踪，调用第三方地图接口"
+          },
+          {
+            "id": 363,
+            "title": "地点标记",
+            "price": 500,
+            "description": "针对指定地点进行标记，调用第三方地图接口"
+          },
+          {
+            "id": 364,
+            "title": "路线规划",
+            "price": 500,
+            "description": "提供两个地点之间的路线规划，调用第三方地图接口"
+          },
+          {
+            "id": 365,
+            "title": "导航",
+            "price": 500,
+            "description": "提供两个地点之间的路线导航（不含语音），调用第三方地图接口"
+          },
+          {
+            "id": 366,
+            "title": "其它业务功能",
+            "price": 500,
+            "description": "基于第三方地图接口的业务功能，单项"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "广告位",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "文件管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "高级用户中心",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "位置服务",
+        "children": []
+      },
+      {
+        "name": "电商功能",
+        "count": 7,
+        "title": "商品相关",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "活动优惠",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "积分系统",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "评价系统",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "配送管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "订单管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "支付",
+        "children": []
+      },
+      {
+        "name": "社交功能",
+        "count": 1,
+        "title": "分享",
+        "children": []
+      },
+      {
+        "name": "其它",
+        "count": 5,
+        "title": "UI设计（单选）",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "统计分析",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "桌面端分辨率支持（宽度）",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "移动端响应式",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "浏览器兼容性",
+        "children": []
+      }
+    ]
+  },
+  "appOptions": {
+    "title": "移动应用Android",
+    "children": [
+      {
+        "name": "基本功能",
+        "count": 5,
+        "title": "通用",
+        "children": [
+          {
+            "id": 71,
+            "title": "App logo和启动页面",
+            "price": 1600,
+            "description": "应用图标，应用开启加载主屏界面"
+          },
+          {
+            "id": 74,
+            "title": "引导和介绍slide页组",
+            "price": 0,
+            "description": "应用开启的引导页面和介绍页的滑动页"
+          },
+          {
+            "id": 75,
+            "title": "帮助和意见反馈",
+            "price": 0,
+            "description": "应用使用帮助，收集用户使用建议，更好地优化产品"
+          },
+          {
+            "id": 76,
+            "title": "关于我们",
+            "price": 0,
+            "description": "应用或开发团队的介绍说明"
+          },
+          {
+            "id": 77,
+            "title": "版本和升级",
+            "price": 0,
+            "description": "应用版本查看和升级提醒"
+          },
+          {
+            "id": 78,
+            "title": "分享和应用打分",
+            "price": 0,
+            "description": "应用分享链接和应用商店打分链接"
+          },
+          {
+            "id": 100,
+            "title": "App通知推送",
+            "price": 1000,
+            "description": "App通知提醒推送"
+          },
+          {
+            "id": 103,
+            "title": "邮件通知",
+            "price": 1000,
+            "description": "邮件通知"
+          },
+          {
+            "id": 104,
+            "title": "短信通知",
+            "price": 1000,
+            "description": "短信通知（按相关规定要求，必须为非销售性质）"
+          },
+          {
+            "id": 142,
+            "title": "商品展示",
+            "price": 1600,
+            "description": "商品列表及详细信息展示"
+          },
+          {
+            "id": 145,
+            "title": "城市切换",
+            "price": 1200,
+            "description": "城市切换，按预定的显示信息不同做调整"
+          },
+          {
+            "id": 168,
+            "title": "即时聊天",
+            "price": 3000,
+            "description": "第三方服务提供接口，可包含：<br>1. 富媒体消息：文字，图片，音视频片段，位置消息；<br>2. 群聊，500~2000人大型群组，聊天室模型，群组权限管理<br>3. 实时音视频，同时支持P2P和Relay"
+          },
+          {
+            "id": 175,
+            "title": "普通设计",
+            "price": 5000,
+            "description": "对设计无过高要求"
+          },
+          {
+            "id": 178,
+            "title": "高级设计",
+            "price": 10000,
+            "description": "对设计要求较高或有特殊要求"
+          },
+          {
+            "id": 179,
+            "title": "无（自行提供）",
+            "price": 0,
+            "description": "需求方自行提供"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "注册登录",
+        "children": [
+          {
+            "id": 79,
+            "title": "邮箱",
+            "price": 800,
+            "description": "邮箱注册，邮件包含验证链接，采用第三方邮件发送服务"
+          },
+          {
+            "id": 81,
+            "title": "手机",
+            "price": 800,
+            "description": "手机号注册，手机接收验证码，采用第三方短信发送平台"
+          },
+          {
+            "id": 82,
+            "title": "密码找回",
+            "price": 800,
+            "description": "忘记密码，默认发送邮件链接或手机接收验证码进入密码重置页"
+          },
+          {
+            "id": 105,
+            "title": "算法搜索",
+            "price": 1600,
+            "description": "基于特定条件的搜索结果顺序"
+          },
+          {
+            "id": 107,
+            "title": "条件筛选",
+            "price": 1600,
+            "description": "基于特定条件筛选排序"
+          },
+          {
+            "id": 108,
+            "title": "智能算法推荐",
+            "price": 1600,
+            "description": "基于相关内容推荐的搜索结果"
+          },
+          {
+            "id": 146,
+            "title": "优惠券",
+            "price": 1600,
+            "description": "优惠券，包含券码编号，满减或免邮"
+          },
+          {
+            "id": 148,
+            "title": "折扣",
+            "price": 1600,
+            "description": "折扣优惠，每个商品定义两个价格，折后价和原价"
+          },
+          {
+            "id": 171,
+            "title": "分享到第三方平台（微博、QQ空间等）",
+            "price": 800,
+            "description": "调用第三方服务接口"
+          },
+          {
+            "id": 180,
+            "title": "第三方统计接口",
+            "price": 1600,
+            "description": "指定的统计分析接口"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "第三方登录",
+        "children": [
+          {
+            "id": 83,
+            "title": "微信",
+            "price": 800,
+            "description": "微信授权登录，获取接口提供的基本信息，要求用户完善平台个人资料"
+          },
+          {
+            "id": 85,
+            "title": "QQ",
+            "price": 800,
+            "description": "QQ授权登录，获取接口提供的基本信息，要求用户完善平台个人资料"
+          },
+          {
+            "id": 86,
+            "title": "微博",
+            "price": 800,
+            "description": "微博授权登录，获取接口提供的基本信息，要求用户完善平台个人资料"
+          },
+          {
+            "id": 109,
+            "title": "评论（图文）",
+            "price": 1600,
+            "description": "平台主内容（图文或产品等）图片文字评论"
+          },
+          {
+            "id": 149,
+            "title": "积分系统设计及展示",
+            "price": 4000,
+            "description": "平台积分系统设计和展示"
+          },
+          {
+            "id": 151,
+            "title": "商城/兑换",
+            "price": 3000,
+            "description": "积分商城、兑换规则和商品兑换"
+          },
+          {
+            "id": 173,
+            "title": "论坛社区",
+            "price": 1600,
+            "description": "整合第三方服务，包括样式调整和用户信息整合（不包括第三方提供的功能之外的功能修改）"
+          },
+          {
+            "id": 182,
+            "title": "默认",
+            "price": 3000,
+            "description": "Android手机屏幕尺寸4-6寸之间，Android系统4.4版本以上"
+          },
+          {
+            "id": 184,
+            "title": "特殊要求 Android",
+            "price": 4000,
+            "description": "Android手机屏幕尺寸大于6寸小于4寸，Android系统4.4版本以下"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "用户中心",
+        "children": [
+          {
+            "id": 87,
+            "title": "个人主页",
+            "price": 3000,
+            "description": "用户信息显示和定制的功能入口"
+          },
+          {
+            "id": 89,
+            "title": "用户资料修改更新",
+            "price": 1600,
+            "description": "用户基本信息、详细信息保存和更新，包括邮箱手机解绑等已有功能"
+          },
+          {
+            "id": 90,
+            "title": "第三方登录管理",
+            "price": 800,
+            "description": "解除第三方登录绑定，只保留用户平台登录信息（如有）"
+          },
+          {
+            "id": 91,
+            "title": "修改密码",
+            "price": 800,
+            "description": "输入旧密码及重复输入新密码"
+          },
+          {
+            "id": 92,
+            "title": "通知提醒列表/详情显示",
+            "price": 800,
+            "description": "通知列表显示，点击查看详情，管理后台发送的通知提醒"
+          },
+          {
+            "id": 111,
+            "title": "工单列表/详情",
+            "price": 1000,
+            "description": "工单列表显示，工单详情显示，客服系统默认用第三方服务，跳转到第三方管理界面"
+          },
+          {
+            "id": 113,
+            "title": "在线客服",
+            "price": 1000,
+            "description": "网页在线客服，实时聊天"
+          },
+          {
+            "id": 114,
+            "title": "留言",
+            "price": 1000,
+            "description": "网页的信息留言"
+          },
+          {
+            "id": 152,
+            "title": "评价系统设计及展示",
+            "price": 4000,
+            "description": "评价系统设计和展示"
+          },
+          {
+            "id": 154,
+            "title": "评分评价发布",
+            "price": 2400,
+            "description": "对商品的评分和评价的发布，包含文本或图片"
+          },
+          {
+            "id": 155,
+            "title": "评价列表",
+            "price": 1600,
+            "description": "评价列表展示"
+          },
+          {
+            "id": 156,
+            "title": "评价评论",
+            "price": 800,
+            "description": "对评价的评论（回帖跟帖）"
+          },
+          {
+            "id": 185,
+            "title": "需要",
+            "price": 0.5,
+            "description": "针对类O2O项目，多个客户类型或客户端程序"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "主内容展示",
+        "children": [
+          {
+            "id": 93,
+            "title": "主内容列表/详情",
+            "price": 3000,
+            "description": "平台主内容（图文或产品等）列表展示及详情显示"
+          },
+          {
+            "id": 95,
+            "title": "文本搜索",
+            "price": 800,
+            "description": "对平台主内容（图文或产品等）文字搜索，需要指定搜索字段"
+          },
+          {
+            "id": 96,
+            "title": "排序",
+            "price": 800,
+            "description": "按预定的字段排序"
+          },
+          {
+            "id": 97,
+            "title": "收藏",
+            "price": 800,
+            "description": "平台主内容（图文或产品等）的收藏"
+          },
+          {
+            "id": 99,
+            "title": "评论（文字）",
+            "price": 800,
+            "description": "平台主内容（图文或产品等）的文字评论"
+          },
+          {
+            "id": 98,
+            "title": "点赞",
+            "price": 800,
+            "description": ""
+          },
+          {
+            "id": 115,
+            "title": "推荐注册",
+            "price": 1000,
+            "description": "记录用户之间的推荐关系"
+          },
+          {
+            "id": 117,
+            "title": "渠道信息记录",
+            "price": 1000,
+            "description": "应用下载渠道记录"
+          },
+          {
+            "id": 157,
+            "title": "地址管理",
+            "price": 1600,
+            "description": "地址列表查看，配送地址管理"
+          },
+          {
+            "id": 159,
+            "title": "物流跟踪",
+            "price": 800,
+            "description": "物流状态查看，接第三方物流查询接口"
+          }
+        ]
+      },
+      {
+        "name": "高级功能",
+        "count": 10,
+        "title": "通知推送方式",
+        "children": [
+          {
+            "id": 118,
+            "title": "音乐播放",
+            "price": 800,
+            "description": "音乐链接及播放"
+          },
+          {
+            "id": 120,
+            "title": "音乐列表/专辑",
+            "price": 800,
+            "description": "音乐列表或专辑，随机、顺序、单曲播放"
+          },
+          {
+            "id": 121,
+            "title": "音乐播放记录",
+            "price": 800,
+            "description": "已播放记录"
+          },
+          {
+            "id": 122,
+            "title": "视频播放",
+            "price": 800,
+            "description": "视频链接及播放"
+          },
+          {
+            "id": 123,
+            "title": "视频列表/专辑",
+            "price": 800,
+            "description": "视频列表或专辑顺序播放"
+          },
+          {
+            "id": 124,
+            "title": "视频播放记录",
+            "price": 800,
+            "description": "已播放记录"
+          },
+          {
+            "id": 160,
+            "title": "订单列表/详情",
+            "price": 1600,
+            "description": "订单包含的商品列表和订单详情"
+          },
+          {
+            "id": 162,
+            "title": "订单流程",
+            "price": 4000,
+            "description": "从加入购物车到生成订单的步骤细分"
+          },
+          {
+            "id": 163,
+            "title": "收货标记",
+            "price": 1600,
+            "description": "收货确认和标记"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "高级搜索",
+        "children": [
+          {
+            "id": 125,
+            "title": "广告位展示",
+            "price": 800,
+            "description": "网站各个广告位的图片、链接切换显示，例如轮播图"
+          },
+          {
+            "id": 164,
+            "title": "微信支付",
+            "price": 1600,
+            "description": "连接微信支付接口"
+          },
+          {
+            "id": 166,
+            "title": "支付宝支付",
+            "price": 1600,
+            "description": "连接支付宝支付接口"
+          },
+          {
+            "id": 167,
+            "title": "其它类型",
+            "price": 3000,
+            "description": "连接银联或其他支付接口"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "主内容相关",
+        "children": [
+          {
+            "id": 127,
+            "title": "图片编辑",
+            "price": 1000,
+            "description": "调整图片显示区域、大小"
+          },
+          {
+            "id": 129,
+            "title": "文件上传下载（仅限Android）",
+            "price": 1200,
+            "description": "限制格式和大小内的文件上传和浏览列表"
+          },
+          {
+            "id": 130,
+            "title": "图片浏览",
+            "price": 800,
+            "description": "调用系统相册浏览"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "客户服务",
+        "children": [
+          {
+            "id": 131,
+            "title": "收藏",
+            "price": 1600,
+            "description": "商品收藏"
+          },
+          {
+            "id": 133,
+            "title": "充值",
+            "price": 1200,
+            "description": "充值到平台账户"
+          },
+          {
+            "id": 134,
+            "title": "取现",
+            "price": 1000,
+            "description": "申请取现，是否及时到账要根据平台规则"
+          },
+          {
+            "id": 135,
+            "title": "流水记录",
+            "price": 800,
+            "description": "资金变动记录"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "推广",
+        "children": [
+          {
+            "id": 136,
+            "title": "附近/周边",
+            "price": 800,
+            "description": "根据用户位置，展示地图上周边相关信息"
+          },
+          {
+            "id": 138,
+            "title": "实时位置跟踪",
+            "price": 800,
+            "description": "设备实时位置跟踪"
+          },
+          {
+            "id": 139,
+            "title": "地点标记",
+            "price": 800,
+            "description": "针对指定地点进行标记"
+          },
+          {
+            "id": 140,
+            "title": "路线规划",
+            "price": 800,
+            "description": "提供两个地点之间的路线规划"
+          },
+          {
+            "id": 141,
+            "title": "导航",
+            "price": 1200,
+            "description": "提供两个地点之间的路线导航（不含语音）"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "音乐/视频",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "广告位",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "文件管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "高级用户中心",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 10,
+        "title": "位置服务",
+        "children": []
+      },
+      {
+        "name": "电商功能",
+        "count": 7,
+        "title": "商品相关",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "活动优惠",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "积分系统",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "评价系统",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "配送管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "订单管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "支付",
+        "children": []
+      },
+      {
+        "name": "社交功能",
+        "count": 3,
+        "title": "即时通讯",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 3,
+        "title": "分享",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 3,
+        "title": "论坛社区",
+        "children": []
+      },
+      {
+        "name": "其它",
+        "count": 4,
+        "title": "原型设计（单选）",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 4,
+        "title": "统计分析",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 4,
+        "title": "设备兼容性",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 4,
+        "title": "多客户端",
+        "children": []
+      }
+    ]
+  },
+  "wechatOptions": {
+    "title": "微信公众号",
+    "children": [
+      {
+        "name": "基础功能",
+        "count": 5,
+        "title": "注册登录",
+        "children": [
+          {
+            "id": 414,
+            "title": "账号绑定",
+            "price": 500,
+            "description": "绑定手机号或平台账号"
+          },
+          {
+            "id": 430,
+            "title": "信息发送和获取",
+            "price": 500,
+            "description": "发送相关口令返回推送的对应客服信息"
+          },
+          {
+            "id": 469,
+            "title": "商品展示",
+            "price": 2000,
+            "description": "商品列表及详细信息展示"
+          },
+          {
+            "id": 472,
+            "title": "城市切换",
+            "price": 1000,
+            "description": "城市切换，按预定的显示信息不同做调整"
+          },
+          {
+            "id": 493,
+            "title": "分享到第三方平台（微博、QQ空间等）",
+            "price": 500,
+            "description": "调用第三方分享服务接口"
+          },
+          {
+            "id": 498,
+            "title": "普通设计",
+            "price": 5000,
+            "description": "对原型设计无过高要求"
+          },
+          {
+            "id": 501,
+            "title": "高级设计",
+            "price": 10000,
+            "description": "对原型设计要求较高或特殊要求"
+          },
+          {
+            "id": 502,
+            "title": "无（自行提供）",
+            "price": 0,
+            "description": "需求方自行提供"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "主内容展示",
+        "children": [
+          {
+            "id": 417,
+            "title": "主内容列表/详情",
+            "price": 500,
+            "description": "主内容（图文或产品等）列表展示及详情显示"
+          },
+          {
+            "id": 433,
+            "title": "游戏",
+            "price": 500,
+            "description": "摇一摇、扫一扫等小游戏"
+          },
+          {
+            "id": 473,
+            "title": "优惠券",
+            "price": 1000,
+            "description": "优惠券，包含券码编号，满减或免邮"
+          },
+          {
+            "id": 475,
+            "title": "折扣",
+            "price": 500,
+            "description": "折扣优惠，每个商品定义两个价格，折后价和原价"
+          },
+          {
+            "id": 496,
+            "title": "论坛社区",
+            "price": 500,
+            "description": "整合第三方服务，包括样式调整和用户信息整合（不包括第三方服务提供的功能之外的功能修改）"
+          },
+          {
+            "id": 503,
+            "title": "第三方统计接口",
+            "price": 500,
+            "description": "指定的统计分析接口"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "功能列表",
+        "children": [
+          {
+            "id": 419,
+            "title": "列表定义",
+            "price": 500,
+            "description": "公众号底栏的功能列表"
+          },
+          {
+            "id": 435,
+            "title": "短信通知",
+            "price": 500,
+            "description": "短信通知（按相关规定要求，必须为非销售性质）"
+          },
+          {
+            "id": 476,
+            "title": "积分系统设计及展示",
+            "price": 500,
+            "description": "平台积分系统设计和展示"
+          },
+          {
+            "id": 478,
+            "title": "商城/兑换",
+            "price": 500,
+            "description": "积分商城、兑换规则和商品兑换"
+          },
+          {
+            "id": 505,
+            "title": "默认",
+            "price": 2000,
+            "description": "iPhone 5() 及以上型号、Android系统4.4版本以上，Android手机屏幕尺寸4-6寸之间"
+          },
+          {
+            "id": 507,
+            "title": "特殊要求",
+            "price": 4000,
+            "description": "iPhone 4s及以下型号，Android系统4.4版本以下，Android手机屏幕尺寸大于6寸，小于4寸"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "用户中心",
+        "children": [
+          {
+            "id": 421,
+            "title": "会员首页",
+            "price": 500,
+            "description": "用户信息显示和定制的功能入口"
+          },
+          {
+            "id": 423,
+            "title": "用户资料修改更新",
+            "price": 500,
+            "description": "用户基本信息、详细信息保存和更新，包括邮箱手机解绑等已有功能"
+          },
+          {
+            "id": 437,
+            "title": "算法搜索",
+            "price": 500,
+            "description": "基于特定条件的搜索结果顺序"
+          },
+          {
+            "id": 439,
+            "title": "条件筛选",
+            "price": 500,
+            "description": "基于特定条件筛选排序"
+          },
+          {
+            "id": 440,
+            "title": "智能算法推荐",
+            "price": 500,
+            "description": "基于相关内容推荐的搜索结果"
+          },
+          {
+            "id": 479,
+            "title": "评价系统设计及展示",
+            "price": 500,
+            "description": "评价系统设计和展示"
+          },
+          {
+            "id": 481,
+            "title": "评分评价发布",
+            "price": 500,
+            "description": "对商品的评分和评价的发布，包含文本或图片"
+          },
+          {
+            "id": 482,
+            "title": "评价列表",
+            "price": 500,
+            "description": "评价的列表展示"
+          },
+          {
+            "id": 483,
+            "title": "评价评论",
+            "price": 500,
+            "description": "对评价的评论（回帖跟帖）"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 5,
+        "title": "主内容展示",
+        "children": [
+          {
+            "id": 424,
+            "title": "网站主内容列表/详情",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）列表展示及详情显示"
+          },
+          {
+            "id": 426,
+            "title": "文本搜索",
+            "price": 500,
+            "description": "对平台主内容（图文或产品等）文字搜索，需要指定搜索字段"
+          },
+          {
+            "id": 427,
+            "title": "排序",
+            "price": 500,
+            "description": "按预定的字段排序"
+          },
+          {
+            "id": 428,
+            "title": "收藏",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）的收藏"
+          },
+          {
+            "id": 429,
+            "title": "评论（文字）",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）的文字评论"
+          },
+          {
+            "id": 441,
+            "title": "评论（图文）",
+            "price": 500,
+            "description": "平台主内容（图文或产品等）图片文字评论"
+          },
+          {
+            "id": 484,
+            "title": "地址管理",
+            "price": 500,
+            "description": "地址列表查看，配送地址管理"
+          },
+          {
+            "id": 486,
+            "title": "物流跟踪",
+            "price": 500,
+            "description": "物流状态查看，接第三方物流查询接口"
+          }
+        ]
+      },
+      {
+        "name": "高级功能",
+        "count": 11,
+        "title": "交互",
+        "children": [
+          {
+            "id": 443,
+            "title": "推荐注册",
+            "price": 500,
+            "description": "记录用户之间的推荐关系，根据链接带有的推荐码记录推荐和被推荐者"
+          },
+          {
+            "id": 487,
+            "title": "订单列表/详情",
+            "price": 1000,
+            "description": "订单包含的商品列表和订单详情"
+          },
+          {
+            "id": 489,
+            "title": "订单流程",
+            "price": 2000,
+            "description": "从加入购物车到生成订单的步骤细分"
+          },
+          {
+            "id": 490,
+            "title": "收货标记",
+            "price": 500,
+            "description": "收货确认和标记"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "小游戏",
+        "children": [
+          {
+            "id": 445,
+            "title": "音乐播放",
+            "price": 500,
+            "description": "音乐链接及播放"
+          },
+          {
+            "id": 447,
+            "title": "音乐列表/专辑",
+            "price": 500,
+            "description": "音乐列表或专辑，随机、顺序、单曲播放"
+          },
+          {
+            "id": 448,
+            "title": "音乐播放记录",
+            "price": 500,
+            "description": "已播放记录"
+          },
+          {
+            "id": 449,
+            "title": "视频播放",
+            "price": 500,
+            "description": "视频链接及播放"
+          },
+          {
+            "id": 450,
+            "title": "视频列表/专辑",
+            "price": 500,
+            "description": "视频列表或专辑顺序播放"
+          },
+          {
+            "id": 451,
+            "title": "视频播放记录",
+            "price": 500,
+            "description": "已播放记录"
+          },
+          {
+            "id": 491,
+            "title": "微信支付",
+            "price": 500,
+            "description": "接入微信支付接口"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "通知推送",
+        "children": [
+          {
+            "id": 452,
+            "title": "广告位展示",
+            "price": 500,
+            "description": "网站各个广告位的图片、链接切换显示，例如轮播图"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "高级搜索",
+        "children": [
+          {
+            "id": 454,
+            "title": "图片编辑",
+            "price": 500,
+            "description": "调整图片显示区域、大小"
+          },
+          {
+            "id": 456,
+            "title": "文件上传下载",
+            "price": 500,
+            "description": "限制格式和大小内的文件上传和浏览列表"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "主内容相关",
+        "children": [
+          {
+            "id": 457,
+            "title": "收藏",
+            "price": 500,
+            "description": "商品收藏"
+          },
+          {
+            "id": 459,
+            "title": "充值",
+            "price": 500,
+            "description": "充值到平台账户"
+          },
+          {
+            "id": 460,
+            "title": "取现",
+            "price": 500,
+            "description": "申请取现，是否及时到账要根据平台规则"
+          },
+          {
+            "id": 461,
+            "title": "流水记录",
+            "price": 500,
+            "description": "资金变动记录"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "推广",
+        "children": [
+          {
+            "id": 462,
+            "title": "附近/周边",
+            "price": 500,
+            "description": "根据用户位置，展示地图上周边相关信息，调用第三方地图接口"
+          },
+          {
+            "id": 464,
+            "title": "实时位置跟踪",
+            "price": 500,
+            "description": "设备实时位置跟踪，调用第三方地图接口"
+          },
+          {
+            "id": 465,
+            "title": "地点标记",
+            "price": 500,
+            "description": "针对指定地点进行标记，调用第三方地图接口"
+          },
+          {
+            "id": 466,
+            "title": "路线规划",
+            "price": 500,
+            "description": "提供两个地点之间的路线规划，调用第三方地图接口"
+          },
+          {
+            "id": 467,
+            "title": "导航",
+            "price": 500,
+            "description": "提供两个地点之间的路线导航（不含语音），调用第三方地图接口"
+          },
+          {
+            "id": 468,
+            "title": "其它业务功能",
+            "price": 500,
+            "description": "基于第三方地图接口的业务功能，单项"
+          }
+        ]
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "音乐/视频",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "广告位",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "文件管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "高级用户中心",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 11,
+        "title": "位置服务",
+        "children": []
+      },
+      {
+        "name": "电商功能",
+        "count": 7,
+        "title": "商品相关",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "活动优惠",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "积分系统",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "评价系统",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "配送管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "订单管理",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 7,
+        "title": "支付",
+        "children": []
+      },
+      {
+        "name": "社交功能",
+        "count": 2,
+        "title": "分享",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 2,
+        "title": "论坛社区",
+        "children": []
+      },
+      {
+        "name": "其它",
+        "count": 3,
+        "title": "UI设计（单选）",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 3,
+        "title": "统计分析",
+        "children": []
+      },
+      {
+        "name": null,
+        "count": 3,
+        "title": "移动端响应式",
+        "children": []
+      }
+    ]
+  }
+}
