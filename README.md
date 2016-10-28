@@ -1,5 +1,5 @@
 # nt
-this is a practice the Web page.
+this is a practice of the Web page.
 
 需与nt-api同时运行测试
 
