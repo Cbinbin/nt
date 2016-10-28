@@ -1,8 +1,27 @@
 import React from 'react'
+import {Link} from 'react-router'
 import '../../res/styles/yangshi.styl'
 import './five.styl'
 
-export default class Hfiv extends React.Component {
+module.exports = React.createClass({
+	getInitialState() {
+		return {
+			casesList: []
+		}
+	},
+	componentDidMount(){
+    	this.fetchcasesList()
+	},
+	fetchcasesList() {
+		fetch('http://localhost:2000/api/cases', { method: 'GET'})
+		.then((response) => {return response.json()})
+		.then((responseJSON) => {
+			this.setState({casesList: this.state.casesList.concat(responseJSON)})
+		})
+		.catch((err) => {
+			console.log(err)
+		})
+	},
 	render() {
 		return(
 			<div className= "hfiv">
@@ -12,39 +31,27 @@ export default class Hfiv extends React.Component {
 
 				<div className= "fiv2">
 					<div className= "fiv3">
-						<div className= "fiv4">
-							<img src="../../res/pic/syjs3.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/syjs3.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/syjs3.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/whdn.png" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/yjjc.png" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/jspx.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/wlsj.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/cgxc.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/yj.jpg" className= "pt10"/>
-						</div>
-						<div className= "fiv4">
-							<img src="../../res/pic/whsj.png" className= "pt10"/>
-						</div>
+					{	
+						this.state.casesList.map((item, index) => {
+							return(
+								
+								<div key={index} className= "fiv4">
+									<Link to= {`/cases/${item._id}`}>
+										<div className= "hid_ftxt">	
+											<p>项目名称:{item.title}</p>
+											<p>价格:{item.quota}</p>
+										</div>
+									</Link>
+									<Link to= {`/cases/${item._id}`}>
+										<img src= {item.photoUrl} className= "pt10"/>
+									</Link>
+								</div>
+							)
+						})
+					}
 					</div>
 				</div>
 			</div>
 		)
 	}
-}
+})

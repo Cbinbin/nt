@@ -15,6 +15,7 @@ import Wechat from '../Evaluation/Wechat'
 import Result from '../Evaluation/Result'
 import Requirement from '../Requirement'
 import Cases from '../Cases'
+import Case from '../Cases/Case'
 import Product from '../Product'
 import Contact from '../Contact'
 
@@ -35,6 +36,7 @@ module.exports = ()=>{
 				<Route path='/evaluation/wechat/result' component={Result}/>
 				<Route path='/requirement' component={Requirement} />
 				<Route path='/cases' component={Cases} />
+				<Route path='/cases/:id' component={Case} />
 				<Route path='/product' component={Product} />
 				<Route path='/contact' component={Contact} />
 			</Route>

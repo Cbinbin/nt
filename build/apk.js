@@ -97,15 +97,19 @@
 
 	var _Requirement2 = _interopRequireDefault(_Requirement);
 
-	var _Cases = __webpack_require__(281);
+	var _Cases = __webpack_require__(279);
 
 	var _Cases2 = _interopRequireDefault(_Cases);
 
-	var _Product = __webpack_require__(284);
+	var _Case = __webpack_require__(282);
+
+	var _Case2 = _interopRequireDefault(_Case);
+
+	var _Product = __webpack_require__(285);
 
 	var _Product2 = _interopRequireDefault(_Product);
 
-	var _Contact = __webpack_require__(287);
+	var _Contact = __webpack_require__(288);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -130,6 +134,7 @@
 				_react2.default.createElement(_reactRouter.Route, { path: '/evaluation/wechat/result', component: _Result2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/requirement', component: _Requirement2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/cases', component: _Cases2.default }),
+				_react2.default.createElement(_reactRouter.Route, { path: '/cases/:id', component: _Case2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/product', component: _Product2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default })
 			)
@@ -10045,7 +10050,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ to: '/evaluation', className: 'nav-link  nav-text', activeStyle: activeStyle },
-								'估价'
+								'\u4F30\u4EF7'
 							)
 						),
 						_react2.default.createElement(
@@ -10054,7 +10059,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ to: '/requirement', className: 'nav-link  nav-text', activeStyle: activeStyle },
-								'需求'
+								'\u9700\u6C42'
 							)
 						),
 						_react2.default.createElement(
@@ -10063,7 +10068,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ to: '/cases', className: 'nav-link  nav-text', activeStyle: activeStyle },
-								'案例'
+								'\u6848\u4F8B'
 							)
 						),
 						_react2.default.createElement(
@@ -10072,7 +10077,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ to: '/product', className: 'nav-link  nav-text', activeStyle: activeStyle },
-								'产品'
+								'\u4EA7\u54C1'
 							)
 						),
 						_react2.default.createElement(
@@ -10081,7 +10086,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ to: '/contact', className: 'nav-link  nav-text', activeStyle: activeStyle },
-								'联系'
+								'\u8054\u7CFB'
 							)
 						)
 					)
@@ -10555,7 +10560,7 @@
 					_react2.default.createElement(
 						'p',
 						{ className: 'sev5' },
-						'公众号'
+						'\u516C\u4F17\u53F7'
 					)
 				)
 			);
@@ -22487,7 +22492,8 @@
 	  if (x === y) {
 	    // Steps 1-5, 7-10
 	    // Steps 6.b-6.e: +0 != -0
-	    return x !== 0 || 1 / x === 1 / y;
+	    // Added the nonzero y check to make Flow happy, but it is redundant
+	    return x !== 0 || y !== 0 || 1 / x === 1 / y;
 	  } else {
 	    // Step 6.a: NaN == NaN
 	    return x !== x && y !== y;
@@ -27940,12 +27946,12 @@
 						_react2.default.createElement(
 							'h1',
 							{ className: 'text-1' },
-							'这里有一套开发方案'
+							'\u8FD9\u91CC\u6709\u4E00\u5957\u5F00\u53D1\u65B9\u6848'
 						),
 						_react2.default.createElement(
 							'h1',
 							{ className: 'text-1' },
-							'帮你快速估价'
+							'\u5E2E\u4F60\u5FEB\u901F\u4F30\u4EF7'
 						),
 						_react2.default.createElement(
 							'div',
@@ -27953,7 +27959,7 @@
 							_react2.default.createElement(
 								'h4',
 								null,
-								'2分钟,了解你的项目费用和周期'
+								'2\u5206\u949F,\u4E86\u89E3\u4F60\u7684\u9879\u76EE\u8D39\u7528\u548C\u5468\u671F'
 							)
 						),
 						_react2.default.createElement(
@@ -27965,7 +27971,7 @@
 								_react2.default.createElement(
 									'botton',
 									{ type: 'botton', className: 'butn butn-t' },
-									' 马上了解 '
+									' \u9A6C\u4E0A\u4E86\u89E3 '
 								)
 							)
 						)
@@ -28068,7 +28074,7 @@
 						_react2.default.createElement(
 							'h2',
 							null,
-							'实现一套完整的开发流程'
+							'\u5B9E\u73B0\u4E00\u5957\u5B8C\u6574\u7684\u5F00\u53D1\u6D41\u7A0B'
 						)
 					),
 					_react2.default.createElement(
@@ -28088,12 +28094,12 @@
 								_react2.default.createElement(
 									'h4',
 									{ className: 'text-4' },
-									'需求整理 & 原型'
+									'\u9700\u6C42\u6574\u7406 & \u539F\u578B'
 								),
 								_react2.default.createElement(
 									'p',
 									{ className: 'text-5' },
-									'newTeo 整理项目需求，编写需求文档并制作原型。'
+									'newTeo \u6574\u7406\u9879\u76EE\u9700\u6C42\uFF0C\u7F16\u5199\u9700\u6C42\u6587\u6863\u5E76\u5236\u4F5C\u539F\u578B\u3002'
 								)
 							)
 						),
@@ -28111,12 +28117,12 @@
 								_react2.default.createElement(
 									'h4',
 									{ className: 'text-4' },
-									'UI 设计'
+									'UI \u8BBE\u8BA1'
 								),
 								_react2.default.createElement(
 									'p',
 									{ className: 'text-5' },
-									'newTeo 设计产品交互界面，提供多种精美风格。'
+									'newTeo \u8BBE\u8BA1\u4EA7\u54C1\u4EA4\u4E92\u754C\u9762\uFF0C\u63D0\u4F9B\u591A\u79CD\u7CBE\u7F8E\u98CE\u683C\u3002'
 								)
 							)
 						),
@@ -28134,12 +28140,12 @@
 								_react2.default.createElement(
 									'h4',
 									{ className: 'text-4' },
-									'程序开发'
+									'\u7A0B\u5E8F\u5F00\u53D1'
 								),
 								_react2.default.createElement(
 									'p',
 									{ className: 'text-5' },
-									'newTeo 开发各种平台实现，严格项目监理管控开发流程。'
+									'newTeo \u5F00\u53D1\u5404\u79CD\u5E73\u53F0\u5B9E\u73B0\uFF0C\u4E25\u683C\u9879\u76EE\u76D1\u7406\u7BA1\u63A7\u5F00\u53D1\u6D41\u7A0B\u3002'
 								)
 							)
 						),
@@ -28157,12 +28163,12 @@
 								_react2.default.createElement(
 									'h4',
 									{ className: 'text-4' },
-									'部署 & 上线'
+									'\u90E8\u7F72 & \u4E0A\u7EBF'
 								),
 								_react2.default.createElement(
 									'p',
 									{ className: 'text-5' },
-									'newTeo 部署项目、测评、快速上线，保障交付。'
+									'newTeo \u90E8\u7F72\u9879\u76EE\u3001\u6D4B\u8BC4\u3001\u5FEB\u901F\u4E0A\u7EBF\uFF0C\u4FDD\u969C\u4EA4\u4ED8\u3002'
 								)
 							)
 						)
@@ -28267,7 +28273,7 @@
 						_react2.default.createElement(
 							'h1',
 							null,
-							'提交需求'
+							'\u63D0\u4EA4\u9700\u6C42'
 						)
 					),
 					_react2.default.createElement(
@@ -28291,13 +28297,13 @@
 									_react2.default.createElement(
 										'button',
 										{ type: 'button', className: 'butn butn-t bt-g' },
-										'网页'
+										'\u7F51\u9875'
 									)
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'ftext-add' },
-									'网页'
+									'\u7F51\u9875'
 								)
 							),
 							_react2.default.createElement(
@@ -28315,13 +28321,13 @@
 									_react2.default.createElement(
 										'button',
 										{ type: 'button', className: 'butn butn-t bt-g' },
-										'软件'
+										'\u8F6F\u4EF6'
 									)
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'ftext-add' },
-									'软件'
+									'\u8F6F\u4EF6'
 								)
 							),
 							_react2.default.createElement(
@@ -28339,13 +28345,13 @@
 									_react2.default.createElement(
 										'button',
 										{ type: 'button', className: 'butn butn-t bt-g' },
-										'微信'
+										'\u5FAE\u4FE1'
 									)
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'ftext-add' },
-									'微信'
+									'\u5FAE\u4FE1'
 								)
 							)
 						)
@@ -28405,15 +28411,11 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(35);
 
 	__webpack_require__(100);
 
@@ -28421,102 +28423,82 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	module.exports = _react2.default.createClass({
+		displayName: 'exports',
+		getInitialState: function getInitialState() {
+			return {
+				casesList: []
+			};
+		},
+		componentDidMount: function componentDidMount() {
+			this.fetchcasesList();
+		},
+		fetchcasesList: function fetchcasesList() {
+			var _this = this;
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Hfiv = function (_React$Component) {
-		_inherits(Hfiv, _React$Component);
-
-		function Hfiv() {
-			_classCallCheck(this, Hfiv);
-
-			return _possibleConstructorReturn(this, (Hfiv.__proto__ || Object.getPrototypeOf(Hfiv)).apply(this, arguments));
-		}
-
-		_createClass(Hfiv, [{
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
+			fetch('http://localhost:2000/api/cases', { method: 'GET' }).then(function (response) {
+				return response.json();
+			}).then(function (responseJSON) {
+				_this.setState({ casesList: _this.state.casesList.concat(responseJSON) });
+			}).catch(function (err) {
+				console.log(err);
+			});
+		},
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'hfiv' },
+				_react2.default.createElement(
 					'div',
-					{ className: 'hfiv' },
+					{ className: 'fiv1' },
 					_react2.default.createElement(
-						'div',
-						{ className: 'fiv1' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'这些项目被newTeo实现'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'fiv2' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'fiv3' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/syjs3.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/syjs3.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/syjs3.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/whdn.png', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/yjjc.png', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/jspx.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/wlsj.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/cgxc.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/yj.jpg', className: 'pt10' })
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'fiv4' },
-								_react2.default.createElement('img', { src: '../../res/pic/whsj.png', className: 'pt10' })
-							)
-						)
+						'h2',
+						null,
+						'\u8FD9\u4E9B\u9879\u76EE\u88ABnewTeo\u5B9E\u73B0'
 					)
-				);
-			}
-		}]);
-
-		return Hfiv;
-	}(_react2.default.Component);
-
-	exports.default = Hfiv;
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'fiv2' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'fiv3' },
+						this.state.casesList.map(function (item, index) {
+							return _react2.default.createElement(
+								'div',
+								{ key: index, className: 'fiv4' },
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ to: '/cases/' + item._id },
+									_react2.default.createElement(
+										'div',
+										{ className: 'hid_ftxt' },
+										_react2.default.createElement(
+											'p',
+											null,
+											'\u9879\u76EE\u540D\u79F0:',
+											item.title
+										),
+										_react2.default.createElement(
+											'p',
+											null,
+											'\u4EF7\u683C:',
+											item.quota
+										)
+									)
+								),
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ to: '/cases/' + item._id },
+									_react2.default.createElement('img', { src: item.photoUrl, className: 'pt10' })
+								)
+							);
+						})
+					)
+				)
+			);
+		}
+	});
 
 /***/ },
 /* 259 */
@@ -28553,7 +28535,7 @@
 
 
 	// module
-	exports.push([module.id, ".hfiv {\n  width: 100%;\n  height: 650px;\n}\n.fiv1 {\n  float: left;\n  width: 100%;\n  height: 10%;\n  padding-top: 30px;\n}\n.fiv2 {\n  float: left;\n  width: 100%;\n  height: 85%;\n}\n.fiv3 {\n  float: left;\n  width: 84%;\n  height: 100%;\n  margin: 0 8%;\n}\n.fiv4 {\n  float: left;\n  width: 25%;\n  height: 33.33%;\n}\n.pt10 {\n  float: left;\n  width: 220px;\n  height: 154px;\n  padding: 15px 32px;\n}\n@media (max-width: 1000px) {\n  .hfiv {\n    height: 700px;\n  }\n  .fiv4 {\n    float: left;\n    width: 29%;\n    height: 21%;\n    margin: 2%;\n  }\n  .pt10 {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n  }\n}\n@media (max-width: 650px) {\n  .hfiv {\n    height: 900px;\n  }\n  .fiv4 {\n    float: left;\n    width: 45%;\n    height: 18%;\n    margin: 2%;\n  }\n  .pt10 {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n  }\n}\n@media (max-width: 550px) {\n  .hfiv {\n    height: 700px;\n  }\n  .fiv4 {\n    float: left;\n    width: 42%;\n    height: 15%;\n    margin: 2%;\n  }\n  .pt10 {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n  }\n}\n", ""]);
+	exports.push([module.id, ".hfiv {\n  width: 100%;\n  height: 650px;\n}\n.fiv1 {\n  float: left;\n  width: 100%;\n  height: 10%;\n  padding-top: 30px;\n}\n.fiv2 {\n  float: left;\n  width: 100%;\n  height: 85%;\n}\n.fiv3 {\n  float: left;\n  width: 84%;\n  height: 100%;\n  margin: 0 8%;\n}\n.fiv4 {\n  float: left;\n  width: 25%;\n  height: 33.33%;\n}\n.pt10 {\n  float: left;\n  width: 220px;\n  height: 154px;\n  padding: 15px 32px;\n}\n.hid_ftxt {\n  position: absolute;\n  width: 220px;\n  height: 104px;\n  margin: 15px 32px;\n  padding-top: 50px;\n  background: rgba(229,22,85,0.64);\n  text-align: center;\n  cursor: pointer;\n  opacity: 0;\n}\n.hid_ftxt:hover {\n  opacity: 1;\n  transition: all 0.5s ease-in;\n}\n@media (max-width: 1000px) {\n  .hfiv {\n    height: 700px;\n  }\n  .fiv4 {\n    float: left;\n    width: 29%;\n    height: 21%;\n    margin: 2%;\n  }\n  .pt10 {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n  }\n  .hid_ftxt {\n    display: none;\n  }\n}\n@media (max-width: 650px) {\n  .hfiv {\n    height: 900px;\n  }\n  .fiv4 {\n    float: left;\n    width: 45%;\n    height: 18%;\n    margin: 2%;\n  }\n  .pt10 {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n  }\n  .hid_ftxt {\n    display: none;\n  }\n}\n@media (max-width: 550px) {\n  .hfiv {\n    height: 700px;\n  }\n  .fiv4 {\n    float: left;\n    width: 42%;\n    height: 15%;\n    margin: 2%;\n  }\n  .pt10 {\n    width: 100%;\n    height: 100%;\n    padding: 0;\n  }\n  .hid_ftxt {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -28604,7 +28586,7 @@
 					_react2.default.createElement(
 						'h2',
 						{ className: 'six1' },
-						'我们的产品'
+						'\u6211\u4EEC\u7684\u4EA7\u54C1'
 					),
 					_react2.default.createElement(
 						'div',
@@ -28730,12 +28712,12 @@
 							_react2.default.createElement(
 								'h2',
 								null,
-								'自助评估您的项目价格和周期'
+								'\u81EA\u52A9\u8BC4\u4F30\u60A8\u7684\u9879\u76EE\u4EF7\u683C\u548C\u5468\u671F'
 							),
 							_react2.default.createElement(
 								'h4',
 								{ className: 'eval-txth' },
-								'轻松完成您的项目评估，获得newTeo承诺报价'
+								'\u8F7B\u677E\u5B8C\u6210\u60A8\u7684\u9879\u76EE\u8BC4\u4F30\uFF0C\u83B7\u5F97newTeo\u627F\u8BFA\u62A5\u4EF7'
 							)
 						)
 					),
@@ -28752,7 +28734,7 @@
 								_react2.default.createElement(
 									'button',
 									{ type: 'button', className: 'eval-butn' },
-									'网站'
+									'\u7F51\u7AD9'
 								)
 							)
 						),
@@ -28766,7 +28748,7 @@
 								_react2.default.createElement(
 									'button',
 									{ type: 'button', className: 'eval-butn' },
-									'ios应用'
+									'ios\u5E94\u7528'
 								)
 							)
 						),
@@ -28780,7 +28762,7 @@
 								_react2.default.createElement(
 									'button',
 									{ type: 'button', className: 'eval-butn' },
-									'安卓应用'
+									'\u5B89\u5353\u5E94\u7528'
 								)
 							)
 						),
@@ -28794,7 +28776,7 @@
 								_react2.default.createElement(
 									'button',
 									{ type: 'button', className: 'eval-butn' },
-									'微信'
+									'\u5FAE\u4FE1'
 								)
 							)
 						)
@@ -28892,7 +28874,7 @@
 			});
 		},
 		updateCount: function updateCount() {
-			var num = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+			var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 			this.setState({
 				checkboxCount: this.state.checkboxCount + num
@@ -28946,17 +28928,17 @@
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'分类'
+										'\u5206\u7C7B'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'模块'
+										'\u6A21\u5757'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'功能点'
+										'\u529F\u80FD\u70B9'
 									)
 								)
 							),
@@ -28994,7 +28976,7 @@
 									_react2.default.createElement(
 										'td',
 										{ colSpan: '3', scope: 'row', className: 'check-result' },
-										'已选',
+										'\u5DF2\u9009',
 										_react2.default.createElement(
 											'span',
 											{ className: 'check-count' },
@@ -29002,7 +28984,7 @@
 											this.state.checkboxCount,
 											' '
 										),
-										'项网页评估'
+										'\u9879\u7F51\u9875\u8BC4\u4F30'
 									)
 								)
 							)
@@ -29017,7 +28999,7 @@
 								onClick: function onClick() {
 									window.location.reload();
 								} },
-							'清除选项'
+							'\u6E05\u9664\u9009\u9879'
 						)
 					),
 					_react2.default.createElement(
@@ -29029,7 +29011,7 @@
 							_react2.default.createElement(
 								'button',
 								{ type: 'button', className: 'web-butn2' },
-								'计算结果'
+								'\u8BA1\u7B97\u7ED3\u679C'
 							)
 						)
 					)
@@ -31055,7 +31037,7 @@
 			});
 		},
 		updateCount: function updateCount() {
-			var num = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+			var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 			this.setState({
 				checkboxCount: this.state.checkboxCount + num
@@ -31109,17 +31091,17 @@
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'分类'
+										'\u5206\u7C7B'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'模块'
+										'\u6A21\u5757'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'功能点'
+										'\u529F\u80FD\u70B9'
 									)
 								)
 							),
@@ -31157,7 +31139,7 @@
 									_react2.default.createElement(
 										'td',
 										{ colSpan: '3', scope: 'row', className: 'check-result' },
-										'已选',
+										'\u5DF2\u9009',
 										_react2.default.createElement(
 											'span',
 											{ className: 'check-count' },
@@ -31165,7 +31147,7 @@
 											this.state.checkboxCount,
 											' '
 										),
-										'项网页评估'
+										'\u9879\u7F51\u9875\u8BC4\u4F30'
 									)
 								)
 							)
@@ -31180,7 +31162,7 @@
 								onClick: function onClick() {
 									window.location.reload();
 								} },
-							'清除选项'
+							'\u6E05\u9664\u9009\u9879'
 						)
 					),
 					_react2.default.createElement(
@@ -31192,7 +31174,7 @@
 							_react2.default.createElement(
 								'button',
 								{ type: 'button', className: 'web-butn2' },
-								'计算结果'
+								'\u8BA1\u7B97\u7ED3\u679C'
 							)
 						)
 					)
@@ -31249,7 +31231,7 @@
 			});
 		},
 		updateCount: function updateCount() {
-			var num = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+			var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 			this.setState({
 				checkboxCount: this.state.checkboxCount + num
@@ -31303,17 +31285,17 @@
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'分类'
+										'\u5206\u7C7B'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'模块'
+										'\u6A21\u5757'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'功能点'
+										'\u529F\u80FD\u70B9'
 									)
 								)
 							),
@@ -31351,7 +31333,7 @@
 									_react2.default.createElement(
 										'td',
 										{ colSpan: '3', scope: 'row', className: 'check-result' },
-										'已选',
+										'\u5DF2\u9009',
 										_react2.default.createElement(
 											'span',
 											{ className: 'check-count' },
@@ -31359,7 +31341,7 @@
 											this.state.checkboxCount,
 											' '
 										),
-										'项网页评估'
+										'\u9879\u7F51\u9875\u8BC4\u4F30'
 									)
 								)
 							)
@@ -31374,7 +31356,7 @@
 								onClick: function onClick() {
 									window.location.reload();
 								} },
-							'清除选项'
+							'\u6E05\u9664\u9009\u9879'
 						)
 					),
 					_react2.default.createElement(
@@ -31386,7 +31368,7 @@
 							_react2.default.createElement(
 								'button',
 								{ type: 'button', className: 'web-butn2' },
-								'计算结果'
+								'\u8BA1\u7B97\u7ED3\u679C'
 							)
 						)
 					)
@@ -31443,7 +31425,7 @@
 			});
 		},
 		updateCount: function updateCount() {
-			var num = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+			var num = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 			this.setState({
 				checkboxCount: this.state.checkboxCount + num
@@ -31497,17 +31479,17 @@
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'分类'
+										'\u5206\u7C7B'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'模块'
+										'\u6A21\u5757'
 									),
 									_react2.default.createElement(
 										'th',
 										{ className: 'head-title' },
-										'功能点'
+										'\u529F\u80FD\u70B9'
 									)
 								)
 							),
@@ -31545,7 +31527,7 @@
 									_react2.default.createElement(
 										'td',
 										{ colSpan: '3', scope: 'row', className: 'check-result' },
-										'已选',
+										'\u5DF2\u9009',
 										_react2.default.createElement(
 											'span',
 											{ className: 'check-count' },
@@ -31553,7 +31535,7 @@
 											this.state.checkboxCount,
 											' '
 										),
-										'项网页评估'
+										'\u9879\u7F51\u9875\u8BC4\u4F30'
 									)
 								)
 							)
@@ -31568,7 +31550,7 @@
 								onClick: function onClick() {
 									window.location.reload();
 								} },
-							'清除选项'
+							'\u6E05\u9664\u9009\u9879'
 						)
 					),
 					_react2.default.createElement(
@@ -31580,7 +31562,7 @@
 							_react2.default.createElement(
 								'button',
 								{ type: 'button', className: 'web-butn2' },
-								'计算结果'
+								'\u8BA1\u7B97\u7ED3\u679C'
 							)
 						)
 					)
@@ -31641,7 +31623,7 @@
 					_react2.default.createElement(
 						'h3',
 						{ className: 'resul-title' },
-						'newTeo预估报价'
+						'newTeo\u9884\u4F30\u62A5\u4EF7'
 					),
 					_react2.default.createElement(
 						'div',
@@ -31650,12 +31632,12 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'resul-butn1' },
-							'重新整理需求'
+							'\u91CD\u65B0\u6574\u7406\u9700\u6C42'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'resul-butn2' },
-							'生成报价'
+							'\u751F\u6210\u62A5\u4EF7'
 						)
 					)
 				)
@@ -31715,16 +31697,167 @@
 
 	var _settings = __webpack_require__(107);
 
+	var _reactRouter = __webpack_require__(35);
+
 	__webpack_require__(100);
 
-	__webpack_require__(279);
+	__webpack_require__(291);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	module.exports = _react2.default.createClass({
 		displayName: 'exports',
+		getInitialState: function getInitialState() {
+			return {
+				order: {
+					"projectTypes": "",
+					"projectBudget": "",
+					"projectCycles": "",
+					"project": "",
+					"names": "",
+					"cellphoneNumber": "",
+					"describe": ""
+				}
+			};
+		},
 		componentDidMount: function componentDidMount() {
 			document.title = _settings.locales.zh_CN.requirement;
+		},
+		handleChange: function handleChange(event) {
+			event.preventDefault();
+			var ordertype = this.state.order;
+			ordertype[event.target.name] = event.target.value;
+
+			this.setState({ order: ordertype });
+			console.log(JSON.stringify(this.state.order));
+		},
+
+		// handleBlurT(event) {
+		// 	var re = /[^\w\u4e00-\u9fa5]/g
+		// 	var value_length = 0
+		// 	function getLength(str) {
+		// 		return str.replace(/[^\x00-xff]/g, "x").length
+		// 	}
+		// 	value_length = getLength(event.target.value)
+		// 	if(event.target.value == "") {
+		// 		alert('不能为空')
+		// 		return
+		// 	}
+		// 	else if(re.test(event.target.value)) {
+		// 		alert('含有非法字符')
+		// 	}
+		// 	else if(value_length<2) {
+		// 		alert('字符个数过少')
+		// 	}
+		// 	else if(value_length>10) {
+		// 		alert('字符个数过多')
+		// 	}
+		// },
+		// handleBlurN(event) {
+		// 	event.preventDefault()
+		// 	if(event.target.value == "") {
+		// 		alert('不能为空')
+		// 	}
+		// },
+		submitHandle: function submitHandle(event) {
+			var _this = this;
+
+			event.preventDefault();
+			var re = /[^\w\u4e00-\u9fa5]/g;
+			var num = /[^0-9]/g;
+			var proj_length = 0;
+			var name_length = 0;
+			var descr_length = 0;
+			function getLength(str) {
+				return str.replace(/[^\x00-xff]/g, "x").length;
+			}
+			proj_length = getLength(this.state.order.project);
+			name_length = getLength(this.state.order.names);
+			descr_length = getLength(this.state.order.describe);
+			//
+			if (this.state.order.projectTypes == "请选择") {
+				alert('请选择项目类型');
+				return false;
+			} else if (this.state.order.projectTypes == "") {
+				alert('请选择项目类型');
+				return false;
+			}
+			//
+			if (this.state.order.projectBudget == "请选择") {
+				alert('请选择项目预算');
+				return false;
+			} else if (this.state.order.projectBudget == "") {
+				alert('请选择项目预算');
+				return false;
+			}
+			//
+			if (this.state.order.projectCycles == "请选择") {
+				alert('请选择项目周期');
+				return false;
+			} else if (this.state.order.projectCycles == "") {
+				alert('请选择项目周期');
+				return false;
+			}
+			//
+			if (this.state.order.project == "") {
+				alert('项目名不能为空');
+				return false;
+			} else if (re.test(this.state.order.project)) {
+				alert('项目名含非法字符');
+				return false;
+			} else if (proj_length < 2) {
+				alert('项目名个数不足');
+				return false;
+			} else if (proj_length > 10) {
+				alert('项目名个数过多');
+				return false;
+			}
+			//
+			if (this.state.order.names == "") {
+				alert('你的大名不能为空');
+				return false;
+			} else if (re.test(this.state.order.names)) {
+				alert('你的大名含非法字符');
+				return false;
+			} else if (name_length < 2) {
+				alert('大名个数不足');
+				return false;
+			} else if (name_length > 10) {
+				alert('大名个数过多');
+				return false;
+			}
+			//
+			if (this.state.order.cellphoneNumber == "") {
+				alert('手机号码不能为空');
+				return false;
+			} else if (num.test(this.state.order.cellphoneNumber)) {
+				alert('手机号码只能为数字');
+				return false;
+			}
+			//
+			if (this.state.order.describe == "") {
+				alert('项目描述不能为空');
+				return false;
+			} else if (descr_length < 10) {
+				alert('项目描述字数不足');
+				return false;
+			} else if (descr_length > 5000) {
+				alert('项目描述字数过多');
+				return false;
+			} else fetch("http://localhost:2000/api/requirements", { method: 'POST',
+				headers: {
+					'Accept': 'application/json',
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(this.state.order) }).then(function (response) {
+				return response.json();
+			}).then(function (responseJSON) {
+				console.log(responseJSON);
+				alert('已提交');
+				_this.props.router.replace('/');
+			}).catch(function (err) {
+				console.log(err);
+			});
 		},
 		render: function render() {
 			return _react2.default.createElement(
@@ -31733,7 +31866,7 @@
 				_react2.default.createElement('div', { className: 'emty' }),
 				_react2.default.createElement(
 					'form',
-					{ className: 'requir' },
+					{ className: 'requir', onSubmit: this.submitHandle },
 					_react2.default.createElement(
 						'div',
 						{ className: 'req-1' },
@@ -31749,30 +31882,32 @@
 									_react2.default.createElement(
 										'lebal',
 										{ className: 'field3' },
-										'项目类型'
+										'\u9879\u76EE\u7C7B\u578B'
 									),
 									_react2.default.createElement(
 										'select',
-										{ className: 'field4' },
+										{ name: 'projectTypes', className: 'field4',
+											onChange: this.handleChange,
+											value: this.state.order.projectTypes },
 										_react2.default.createElement(
 											'option',
 											null,
-											'请选择'
+											'\u8BF7\u9009\u62E9'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'Web网站'
+											'Web\u7F51\u7AD9'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'移动应用APP'
+											'\u79FB\u52A8\u5E94\u7528APP'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'微信开发'
+											'\u5FAE\u4FE1\u5F00\u53D1'
 										)
 									)
 								)
@@ -31786,20 +31921,22 @@
 									_react2.default.createElement(
 										'lebal',
 										{ className: 'field3' },
-										'项目预算'
+										'\u9879\u76EE\u9884\u7B97'
 									),
 									_react2.default.createElement(
 										'select',
-										{ className: 'field4' },
+										{ name: 'projectBudget', className: 'field4',
+											onChange: this.handleChange,
+											value: this.state.order.projectBudget },
 										_react2.default.createElement(
 											'option',
 											null,
-											'请选择'
+											'\u8BF7\u9009\u62E9'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'20K以下'
+											'20K\u4EE5\u4E0B'
 										),
 										_react2.default.createElement(
 											'option',
@@ -31809,7 +31946,7 @@
 										_react2.default.createElement(
 											'option',
 											null,
-											'50K以上'
+											'50K\u4EE5\u4E0A'
 										)
 									)
 								)
@@ -31823,55 +31960,57 @@
 									_react2.default.createElement(
 										'lebal',
 										{ className: 'field3' },
-										'项目周期'
+										'\u9879\u76EE\u5468\u671F'
 									),
 									_react2.default.createElement(
 										'select',
-										{ className: 'field4' },
+										{ name: 'projectCycles', className: 'field4',
+											onChange: this.handleChange,
+											value: this.state.order.projectCycles },
 										_react2.default.createElement(
 											'option',
 											null,
-											'请选择'
+											'\u8BF7\u9009\u62E9'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'1周'
+											'1\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'2周'
+											'2\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'3周'
+											'3\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'4周'
+											'4\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'5周'
+											'5\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'6周'
+											'6\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'7周'
+											'7\u5468'
 										),
 										_react2.default.createElement(
 											'option',
 											null,
-											'8周'
+											'8\u5468'
 										)
 									)
 								)
@@ -31886,9 +32025,11 @@
 								_react2.default.createElement(
 									'lebal',
 									{ className: 'field3' },
-									'项目名'
+									'\u9879\u76EE\u540D'
 								),
-								_react2.default.createElement('input', { type: 'text', className: 'text-req', placeholder: '2-10字符' })
+								_react2.default.createElement('input', { type: 'text', name: 'project', className: 'text-req',
+									onChange: this.handleChange /*onBlur= {this.handleBlurT}*/, value: this.state.order.project,
+									placeholder: '2-10\u5B57\u7B26(\u5305\u542B\u4E2D\u6587\u3001\u5B57\u6BCD\u3001\u6570\u5B57\u548C\u4E0B\u5212\u7EBF)' })
 							)
 						),
 						_react2.default.createElement(
@@ -31900,9 +32041,11 @@
 								_react2.default.createElement(
 									'lebal',
 									{ className: 'field3' },
-									'你的大名'
+									'\u4F60\u7684\u5927\u540D'
 								),
-								_react2.default.createElement('input', { type: 'text', className: 'text-req', placeholder: '2-10字符' })
+								_react2.default.createElement('input', { type: 'text', name: 'names', className: 'text-req',
+									onChange: this.handleChange /*onBlur= {this.handleBlurT}*/, value: this.state.order.names,
+									placeholder: '2-10\u5B57\u7B26(\u5305\u542B\u4E2D\u6587\u3001\u5B57\u6BCD\u3001\u6570\u5B57\u548C\u4E0B\u5212\u7EBF)' })
 							)
 						),
 						_react2.default.createElement(
@@ -31914,9 +32057,10 @@
 								_react2.default.createElement(
 									'lebal',
 									{ className: 'field3' },
-									'手机号码'
+									'\u624B\u673A\u53F7\u7801'
 								),
-								_react2.default.createElement('input', { type: 'text', className: 'text-req' })
+								_react2.default.createElement('input', { type: 'text', name: 'cellphoneNumber', className: 'text-req',
+									onChange: this.handleChange, value: this.state.order.cellphoneNumber })
 							)
 						),
 						_react2.default.createElement(
@@ -31928,15 +32072,17 @@
 								_react2.default.createElement(
 									'lebal',
 									{ className: 'field3' },
-									'项目描述'
+									'\u9879\u76EE\u63CF\u8FF0'
 								),
-								_react2.default.createElement('textarea', { className: 'text-reqb', placeholder: '大于10 小于5000个字符' })
+								_react2.default.createElement('textarea', { name: 'describe', className: 'text-reqb',
+									onChange: this.handleChange, value: this.state.order.describe,
+									placeholder: '\u5927\u4E8E10 \u5C0F\u4E8E5000\u4E2A\u5B57\u7B26' })
 							)
 						),
 						_react2.default.createElement(
 							'button',
-							{ type: 'button', className: 'butn butn-t req-5' },
-							'提交需求'
+							{ type: 'submit', className: 'butn butn-t req-5' },
+							'\u63D0\u4EA4\u9700\u6C42'
 						)
 					)
 				)
@@ -31948,66 +32094,47 @@
 /* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(280);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(103)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./requir.styl", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./requir.styl");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(102)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "lebal {\n  display: inline-block;\n}\n.requir {\n  width: 970px;\n  height: 900px;\n  margin: 50px auto;\n  background-color: #fff;\n  border-radius: 8px;\n}\n.req-1 {\n  width: 80%;\n  height: 87%;\n  padding: 50px 10%;\n}\n.req-2 {\n  fload: left;\n  width: 100%;\n  height: 115px;\n}\n.field1 {\n  display: block;\n  float: left;\n  width: 30%;\n  height: 115px;\n  margin: 0 1.6%;\n}\n.field2 {\n  width: 100%;\n  height: 100%;\n  border: 0;\n}\n.field3 {\n  width: 100%;\n  margin-bottom: 20px;\n  font-size: 16px;\n}\n.field4 {\n  display: block;\n  width: 100%;\n  height: 45px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  background-color: #ecedf1;\n  color: #55595c;\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n}\n.req-3 {\n  width: 100%;\n  height: 120px;\n}\n.req-4 {\n  width: 100%;\n  height: 200px;\n}\n.text-req {\n  background-color: #ecedf1;\n  width: 100%;\n  height: 40px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n}\n.text-reqb {\n  background-color: #ecedf1;\n  width: 100%;\n  height: 150px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n}\n.req-5 {\n  display: block;\n  margin: 80px auto;\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(35);
+
 	var _settings = __webpack_require__(107);
 
 	__webpack_require__(100);
 
-	__webpack_require__(282);
+	__webpack_require__(280);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	module.exports = _react2.default.createClass({
 		displayName: 'exports',
-		componentDidMount: function componentDidMount() {
+		getInitialState: function getInitialState() {
+			return {
+				casesList: []
+			};
+		},
+		componentWillMount: function componentWillMount() {
 			document.title = _settings.locales.zh_CN.cases;
+			this.fetchcasesList();
+		},
+		fetchcasesList: function fetchcasesList() {
+			var _this = this;
+
+			var query = this.props.location.search;
+			fetch('http://localhost:2000/api/cases', { method: 'GET' }).then(function (response) {
+				return response.json();
+			}).then(function (responseJSON) {
+				_this.setState({ casesList: _this.state.casesList.concat(responseJSON) });
+			}).catch(function (err) {
+				console.log(err);
+			});
 		},
 		render: function render() {
+			var activeStyle = { color: '#CA8100' };
 			return _react2.default.createElement(
 				'div',
 				null,
@@ -32025,583 +32152,113 @@
 								'li',
 								{ className: 'nav-cas' },
 								_react2.default.createElement(
-									'a',
-									{ href: '', className: 'cas-a' },
-									'icon'
+									_reactRouter.Link,
+									{ to: '/cases?all', className: 'cas-a', activeStyle: activeStyle },
+									'\u5168\u90E8'
 								)
 							),
 							_react2.default.createElement(
 								'li',
 								{ className: 'nav-cas' },
 								_react2.default.createElement(
-									'a',
-									{ href: '', className: 'cas-a' },
-									'网页'
+									_reactRouter.Link,
+									{ to: '/cases/?differences=\u7F51\u7AD9', className: 'cas-a', activeStyle: activeStyle },
+									'\u7F51\u9875'
 								)
 							),
 							_react2.default.createElement(
 								'li',
 								{ className: 'nav-cas' },
 								_react2.default.createElement(
-									'a',
-									{ href: '', className: 'cas-a' },
-									'软件'
+									_reactRouter.Link,
+									{ to: '/cases/?differences=\u79FB\u52A8\u5E94\u7528', className: 'cas-a', activeStyle: activeStyle },
+									'\u8F6F\u4EF6'
 								)
 							),
 							_react2.default.createElement(
 								'li',
 								{ className: 'nav-cas' },
 								_react2.default.createElement(
-									'a',
-									{ href: '', className: 'cas-a' },
-									'微信'
+									_reactRouter.Link,
+									{ to: '/cases/?differences=\u5FAE\u4FE1\u516C\u4F17\u53F7', className: 'cas-a', activeStyle: activeStyle },
+									'\u5FAE\u4FE1'
 								)
 							)
 						)
 					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/syjs3.jpg' }),
-						_react2.default.createElement(
+					this.state.casesList.map(function (item, index) {
+						return _react2.default.createElement(
 							'div',
-							{ className: 'cas-ptext' },
-							'石油技术平台第三期'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
+							{ key: index, className: 'cas2' },
 							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
+								_reactRouter.Link,
+								{ to: '/cases/' + item._id },
+								_react2.default.createElement('img', { className: 'cas-photo', src: item.photoUrl }),
+								_react2.default.createElement(
+									'div',
+									{ className: 'cas-ptext' },
+									item.title
+								)
+							),
+							_react2.default.createElement('img', { className: 'finish',
+								src: item.accomplish ? "../res/pic/accomplish.png" : "../res/pic/going.png" }),
+							_react2.default.createElement(
+								'div',
+								{ className: 't-cas1' },
+								_react2.default.createElement(
+									'p',
+									{ className: 'cas-text1' },
+									item.money
+								),
+								_react2.default.createElement(
+									'p',
+									{ className: 'cas-text2' },
+									item.quota
+								)
 							),
 							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥8000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
+								'div',
+								{ className: 't-cas1' },
+								_react2.default.createElement(
+									'p',
+									{ className: 'cas-text1' },
+									item.cycle
+								),
+								_react2.default.createElement(
+									'p',
+									{ className: 'cas-text2' },
+									item.days
+								)
 							),
 							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'10天'
+								'div',
+								{ className: 't-cas1' },
+								_react2.default.createElement(
+									'p',
+									{ className: 'cas-text1' },
+									item.types
+								),
+								_react2.default.createElement(
+									'p',
+									{ className: 'cas-text2' },
+									item.differences
+								)
 							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/syjs3.jpg' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'石油技术平台第二期'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥5000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'7天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/syjs3.jpg' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'石油技术平台第一期'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥24500'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'21天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/whdn.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'文华包装-电脑版'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥7500'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'15天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/yjjc.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'硬件检测一期'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥5000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'7天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/jspx.jpg' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'技术培训分享平台'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥25500'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'21天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/wlsj.jpg' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'网络交友社交平台'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥43000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'35天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/cgxc.jpg' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'差旅行程管理app'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥55000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'40天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/yj.jpg' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'印记-旅行购'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥25000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'42天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'cas2' },
-						_react2.default.createElement('img', { className: 'cas-photo', src: '../res/pic/whsj.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'cas-ptext' },
-							'文华包装-手机版'
-						),
-						_react2.default.createElement('img', { className: 'finish', src: '../res/pic/accomplish.png' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'金额'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'￥75000'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'周期'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'15天'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 't-cas1' },
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text1' },
-								'类型'
-							),
-							_react2.default.createElement(
-								'p',
-								{ className: 'cas-text2' },
-								'网站'
-							)
-						)
-					)
+						);
+					})
 				)
 			);
 		}
 	});
 
 /***/ },
-/* 282 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(283);
+	var content = __webpack_require__(281);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(103)(content, {});
@@ -32621,7 +32278,7 @@
 	}
 
 /***/ },
-/* 283 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(102)();
@@ -32629,13 +32286,143 @@
 
 
 	// module
-	exports.push([module.id, ".case {\n  width: 100%;\n}\n.cas1 {\n  width: 100%;\n  height: 80px;\n  background-color: #fff;\n}\n.cas-ul {\n  margin-left: 70px;\n}\n.nav-cas {\n  display: inline-block;\n  margin: 15px 10px;\n}\n.cas-a {\n  color: #d3d6d5;\n  font-size: 22px;\n}\n.cas2 {\n  width: 970px;\n  height: 280px;\n  margin: 50px auto;\n  background-color: #fff;\n  border-radius: 10px;\n}\n.cas-photo {\n  float: left;\n  width: 30%;\n  margin: 45px auto 45px 6%;\n}\n.cas-photo:hover {\n  box-shadow: 0px 0px 15px 0px #373a3c;\n}\n.cas-ptext {\n  width: 291px;\n  height: 32px;\n  position: absolute;\n  margin-left: 58px;\n  margin-top: 206px;\n  color: #fff;\n  background-color: rgba(57,83,72,0.66);\n  text-align: center;\n}\n.finish {\n  float: right;\n  height: 20%;\n  margin: 0 0 0 35%;\n  margin-top: -10px;\n}\n.t-cas1 {\n  float: left;\n  width: 21%;\n  height: 80%;\n  text-align: center;\n}\n.cas-text1 {\n  font-size: 2em;\n  padding-top: 30px;\n  color: #ca8100;\n}\n.cas-text2 {\n  font-size: 2em;\n  padding-top: 30px;\n  color: #3b5348;\n}\n", ""]);
+	exports.push([module.id, ".case {\n  width: 100%;\n}\n.cas1 {\n  width: 100%;\n  height: 80px;\n  background-color: #fff;\n}\n.cas-ul {\n  margin-left: 70px;\n}\n.nav-cas {\n  display: inline-block;\n  margin: 15px 10px;\n}\n.cas-a {\n  color: #d3d6d5;\n  font-size: 22px;\n}\n.cas2 {\n  width: 970px;\n  height: 280px;\n  margin: 50px auto;\n  background-color: #fff;\n  border-radius: 10px;\n}\n.cas-photo {\n  float: left;\n  width: 30%;\n  margin: 45px auto 45px 6%;\n  cursor: pointer;\n}\n.cas-photo:hover {\n  box-shadow: 0px 0px 15px 0px #373a3c;\n}\n.cas-ptext {\n  width: 291px;\n  height: 32px;\n  position: absolute;\n  margin-left: 58px;\n  margin-top: 206px;\n  color: #fff;\n  background-color: rgba(57,83,72,0.66);\n  text-align: center;\n}\n.finish {\n  float: right;\n  height: 20%;\n  margin: 0 0 0 35%;\n  margin-top: -10px;\n}\n.t-cas1 {\n  float: left;\n  width: 21%;\n  height: 80%;\n  text-align: center;\n}\n.cas-text1 {\n  font-size: 2em;\n  padding-top: 30px;\n  color: #ca8100;\n}\n.cas-text2 {\n  font-size: 2em;\n  padding-top: 30px;\n  color: #3b5348;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(283);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	module.exports = _react2.default.createClass({
+		displayName: 'exports',
+		getInitialState: function getInitialState() {
+			return {
+				caseContent: { pics: [] } //?
+			};
+		},
+		componentDidMount: function componentDidMount() {
+			this.fetchcaseContent();
+		},
+		fetchcaseContent: function fetchcaseContent() {
+			var _this = this;
+
+			fetch('http://localhost:2000/api/cases/' + this.props.params.id, { method: 'GET' }).then(function (response) {
+				return response.json();
+			}).then(function (responseJSON) {
+				_this.setState({ caseContent: responseJSON });
+			}).catch(function (err) {
+				console.log(err);
+			});
+		},
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement('div', { className: 'emty' }),
+				_react2.default.createElement(
+					'div',
+					{ className: 'picpart' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'casepics' },
+						this.state.caseContent.pics.map(function (item, index) {
+							return _react2.default.createElement('img', { src: item, key: index, className: 'case_pic' });
+						}) //?
+
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'txtpart' },
+					_react2.default.createElement(
+						'p',
+						{ className: 'casetxt' },
+						'\u9879\u76EE\u540D\u79F0\uFF1A',
+						this.state.caseContent.title
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'casetxt' },
+						'\u9879\u76EE\u8D39\u7528\uFF1A',
+						this.state.caseContent.quota
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'casetxt' },
+						'\u9879\u76EE\u5468\u671F\uFF1A',
+						this.state.caseContent.days,
+						'\u5DE5\u4F5C\u65E5'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'casetxt' },
+						'\u9879\u76EE\u7C7B\u578B\uFF1A',
+						this.state.caseContent.differences
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'casetxt' },
+						this.state.caseContent.description
+					)
+				)
+			);
+		}
+	});
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(284);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./case.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./case.styl");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
 /* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".picpart {\n  width: 74%;\n  margin: 30px 10%;\n  padding: 30px 3%;\n  border-radius: 10px;\n  background-color: #fff;\n}\n.txtpart {\n  width: 80%;\n  height: 60%;\n  margin: 0 10% 30px;\n  border-radius: 10px;\n  background-color: #fff;\n}\n.casetxt {\n  width: 80%;\n  height: 18%;\n  color: #395348;\n  font-size: 25px;\n  line-height: 3;\n  padding-left: 5%;\n}\n.casepics {\n  overflow-x: auto;\n  overflow-y: hidden;\n  white-space: nowrap;\n  border-radius: 5px;\n  background-color: rgba(207,133,1,0.65);\n}\n.case_pic {\n  height: 320px;\n  margin: 20px 20px 20px 0;\n  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.5);\n}\n.casepics::-webkit-scrollbar {\n  width: 800px;\n  height: 14px;\n}\n.casepics::-webkit-scrollbar-thumb {\n  background-color: #fff;\n  border-radius: 14px;\n  border: 2px solid #fff;\n}\n.casepics::-webkit-scrollbar-track-piece {\n  background-color: #52d69d;\n  border-radius: 12px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32648,7 +32435,7 @@
 
 	__webpack_require__(100);
 
-	__webpack_require__(285);
+	__webpack_require__(286);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32675,22 +32462,22 @@
 							_react2.default.createElement(
 								'div',
 								{ className: 'prod2' },
-								'JSX-China：'
+								'JSX-China\uFF1A'
 							),
 							_react2.default.createElement(
 								'p',
 								{ className: 'prod3' },
-								'提倡React ＋ REST API 的Web开发模式，社区将逐渐 形成一套关于React开发的知识库，将覆盖快速入门、实战模式、实战进阶、延伸 探讨和同学们在开发过程中所遭遇的形形色色疑难杂症的汇总及解决方案。 如果 你是一枚新手，社区的知识库将助你一路乘风破浪。 如果你是一枚老鸟，快些儿 加入到社区共建中来，大声说～你是怎么玩的。'
+								'\u63D0\u5021React \uFF0B REST API \u7684Web\u5F00\u53D1\u6A21\u5F0F\uFF0C\u793E\u533A\u5C06\u9010\u6E10 \u5F62\u6210\u4E00\u5957\u5173\u4E8EReact\u5F00\u53D1\u7684\u77E5\u8BC6\u5E93\uFF0C\u5C06\u8986\u76D6\u5FEB\u901F\u5165\u95E8\u3001\u5B9E\u6218\u6A21\u5F0F\u3001\u5B9E\u6218\u8FDB\u9636\u3001\u5EF6\u4F38 \u63A2\u8BA8\u548C\u540C\u5B66\u4EEC\u5728\u5F00\u53D1\u8FC7\u7A0B\u4E2D\u6240\u906D\u9047\u7684\u5F62\u5F62\u8272\u8272\u7591\u96BE\u6742\u75C7\u7684\u6C47\u603B\u53CA\u89E3\u51B3\u65B9\u6848\u3002 \u5982\u679C \u4F60\u662F\u4E00\u679A\u65B0\u624B\uFF0C\u793E\u533A\u7684\u77E5\u8BC6\u5E93\u5C06\u52A9\u4F60\u4E00\u8DEF\u4E58\u98CE\u7834\u6D6A\u3002 \u5982\u679C\u4F60\u662F\u4E00\u679A\u8001\u9E1F\uFF0C\u5FEB\u4E9B\u513F \u52A0\u5165\u5230\u793E\u533A\u5171\u5EFA\u4E2D\u6765\uFF0C\u5927\u58F0\u8BF4\uFF5E\u4F60\u662F\u600E\u4E48\u73A9\u7684\u3002'
 							),
 							_react2.default.createElement(
 								'div',
 								{ className: 'prod2' },
-								'敬请期待：'
+								'\u656C\u8BF7\u671F\u5F85\uFF1A'
 							),
 							_react2.default.createElement(
 								'p',
 								{ className: 'prod3' },
-								'这将是一款别开生面的产品～简约，不简单；专注，不浮 夸；随性，却用心；不俗，很好用！ Beta版内测中。。。。。。'
+								'\u8FD9\u5C06\u662F\u4E00\u6B3E\u522B\u5F00\u751F\u9762\u7684\u4EA7\u54C1\uFF5E\u7B80\u7EA6\uFF0C\u4E0D\u7B80\u5355\uFF1B\u4E13\u6CE8\uFF0C\u4E0D\u6D6E \u5938\uFF1B\u968F\u6027\uFF0C\u5374\u7528\u5FC3\uFF1B\u4E0D\u4FD7\uFF0C\u5F88\u597D\u7528\uFF01 Beta\u7248\u5185\u6D4B\u4E2D\u3002\u3002\u3002\u3002\u3002\u3002'
 							)
 						)
 					),
@@ -32704,22 +32491,22 @@
 							_react2.default.createElement(
 								'div',
 								{ className: 'prod2' },
-								'JSX-China：'
+								'JSX-China\uFF1A'
 							),
 							_react2.default.createElement(
 								'p',
 								{ className: 'prod3' },
-								'提倡React ＋ REST API 的Web开发模式，社区将逐渐 形成一套关于React开发的知识库，将覆盖快速入门、实战模式、实战进阶、延伸 探讨和同学们在开发过程中所遭遇的形形色色疑难杂症的汇总及解决方案。 如果 你是一枚新手，社区的知识库将助你一路乘风破浪。 如果你是一枚老鸟，快些儿 加入到社区共建中来，大声说～你是怎么玩的。'
+								'\u63D0\u5021React \uFF0B REST API \u7684Web\u5F00\u53D1\u6A21\u5F0F\uFF0C\u793E\u533A\u5C06\u9010\u6E10 \u5F62\u6210\u4E00\u5957\u5173\u4E8EReact\u5F00\u53D1\u7684\u77E5\u8BC6\u5E93\uFF0C\u5C06\u8986\u76D6\u5FEB\u901F\u5165\u95E8\u3001\u5B9E\u6218\u6A21\u5F0F\u3001\u5B9E\u6218\u8FDB\u9636\u3001\u5EF6\u4F38 \u63A2\u8BA8\u548C\u540C\u5B66\u4EEC\u5728\u5F00\u53D1\u8FC7\u7A0B\u4E2D\u6240\u906D\u9047\u7684\u5F62\u5F62\u8272\u8272\u7591\u96BE\u6742\u75C7\u7684\u6C47\u603B\u53CA\u89E3\u51B3\u65B9\u6848\u3002 \u5982\u679C \u4F60\u662F\u4E00\u679A\u65B0\u624B\uFF0C\u793E\u533A\u7684\u77E5\u8BC6\u5E93\u5C06\u52A9\u4F60\u4E00\u8DEF\u4E58\u98CE\u7834\u6D6A\u3002 \u5982\u679C\u4F60\u662F\u4E00\u679A\u8001\u9E1F\uFF0C\u5FEB\u4E9B\u513F \u52A0\u5165\u5230\u793E\u533A\u5171\u5EFA\u4E2D\u6765\uFF0C\u5927\u58F0\u8BF4\uFF5E\u4F60\u662F\u600E\u4E48\u73A9\u7684\u3002'
 							),
 							_react2.default.createElement(
 								'div',
 								{ className: 'prod2' },
-								'敬请期待：'
+								'\u656C\u8BF7\u671F\u5F85\uFF1A'
 							),
 							_react2.default.createElement(
 								'p',
 								{ className: 'prod3' },
-								'这将是一款别开生面的产品～简约，不简单；专注，不浮 夸；随性，却用心；不俗，很好用！ Beta版内测中。。。。。。'
+								'\u8FD9\u5C06\u662F\u4E00\u6B3E\u522B\u5F00\u751F\u9762\u7684\u4EA7\u54C1\uFF5E\u7B80\u7EA6\uFF0C\u4E0D\u7B80\u5355\uFF1B\u4E13\u6CE8\uFF0C\u4E0D\u6D6E \u5938\uFF1B\u968F\u6027\uFF0C\u5374\u7528\u5FC3\uFF1B\u4E0D\u4FD7\uFF0C\u5F88\u597D\u7528\uFF01 Beta\u7248\u5185\u6D4B\u4E2D\u3002\u3002\u3002\u3002\u3002\u3002'
 							)
 						)
 					)
@@ -32729,13 +32516,13 @@
 	});
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(286);
+	var content = __webpack_require__(287);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(103)(content, {});
@@ -32755,7 +32542,7 @@
 	}
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(102)();
@@ -32769,7 +32556,7 @@
 
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32782,7 +32569,7 @@
 
 	__webpack_require__(100);
 
-	__webpack_require__(288);
+	__webpack_require__(289);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32806,7 +32593,7 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'con-T' },
-							'newTeo乃潮州市潮安区新潮网络科技有限公司（新潮科技）麾下核心技术 &设计团队。 主要提供现代互联网应用的需求梳理、UI设计、程序开发和 维护等服务。 扁平化管理，开放式思维是团队理念， 敢于运用前沿技术、 新颖模式为团队风格， 自我革新，精益求精乃团队品质。 一群年轻人因 为类似的想法而聚集到一起，为实现共同的愿景而不懈努力。 这便是 newTeo，这正是新潮科技！'
+							'newTeo\u4E43\u6F6E\u5DDE\u5E02\u6F6E\u5B89\u533A\u65B0\u6F6E\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\uFF08\u65B0\u6F6E\u79D1\u6280\uFF09\u9EBE\u4E0B\u6838\u5FC3\u6280\u672F &\u8BBE\u8BA1\u56E2\u961F\u3002 \u4E3B\u8981\u63D0\u4F9B\u73B0\u4EE3\u4E92\u8054\u7F51\u5E94\u7528\u7684\u9700\u6C42\u68B3\u7406\u3001UI\u8BBE\u8BA1\u3001\u7A0B\u5E8F\u5F00\u53D1\u548C \u7EF4\u62A4\u7B49\u670D\u52A1\u3002 \u6241\u5E73\u5316\u7BA1\u7406\uFF0C\u5F00\u653E\u5F0F\u601D\u7EF4\u662F\u56E2\u961F\u7406\u5FF5\uFF0C \u6562\u4E8E\u8FD0\u7528\u524D\u6CBF\u6280\u672F\u3001 \u65B0\u9896\u6A21\u5F0F\u4E3A\u56E2\u961F\u98CE\u683C\uFF0C \u81EA\u6211\u9769\u65B0\uFF0C\u7CBE\u76CA\u6C42\u7CBE\u4E43\u56E2\u961F\u54C1\u8D28\u3002 \u4E00\u7FA4\u5E74\u8F7B\u4EBA\u56E0 \u4E3A\u7C7B\u4F3C\u7684\u60F3\u6CD5\u800C\u805A\u96C6\u5230\u4E00\u8D77\uFF0C\u4E3A\u5B9E\u73B0\u5171\u540C\u7684\u613F\u666F\u800C\u4E0D\u61C8\u52AA\u529B\u3002 \u8FD9\u4FBF\u662F newTeo\uFF0C\u8FD9\u6B63\u662F\u65B0\u6F6E\u79D1\u6280\uFF01'
 						),
 						_react2.default.createElement(
 							'div',
@@ -32820,13 +32607,13 @@
 	});
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(289);
+	var content = __webpack_require__(290);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(103)(content, {});
@@ -32846,7 +32633,7 @@
 	}
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(102)();
@@ -32855,6 +32642,46 @@
 
 	// module
 	exports.push([module.id, ".cont-end {\n  width: 100%;\n  background-color: #fff;\n}\n.contat {\n  width: 95%;\n  height: 600px;\n  margin: 0 auto auto 5%;\n}\n.con-P {\n  position: absolute;\n  height: 414px;\n  margin: 2% 18%;\n}\n.con-T {\n  position: absolute;\n  margin: 70px 60px;\n  width: 720px;\n  height: 250px;\n  display: block;\n  text-indent: 1cm;\n  line-height: 50px;\n  font-size: 1.25rem;\n}\n.people {\n  height: 400px;\n  float: right;\n  padding-top: 200px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(292);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./requir.styl", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./requir.styl");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "lebal {\n  display: inline-block;\n}\n.requir {\n  width: 970px;\n  height: 900px;\n  margin: 50px auto;\n  background-color: #fff;\n  border-radius: 8px;\n}\n.req-1 {\n  width: 80%;\n  height: 87%;\n  padding: 50px 10%;\n}\n.req-2 {\n  fload: left;\n  width: 100%;\n  height: 115px;\n}\n.field1 {\n  display: block;\n  float: left;\n  width: 30%;\n  height: 115px;\n  margin: 0 1.6%;\n}\n.field2 {\n  width: 100%;\n  height: 100%;\n  border: 0;\n}\n.field3 {\n  width: 100%;\n  margin-bottom: 20px;\n  font-size: 16px;\n}\n.field4 {\n  display: block;\n  width: 100%;\n  height: 45px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  background-color: #ecedf1;\n  color: #55595c;\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n}\n.req-3 {\n  width: 100%;\n  height: 120px;\n}\n.req-4 {\n  width: 100%;\n  height: 200px;\n}\n.text-req {\n  background-color: #ecedf1;\n  width: 100%;\n  height: 40px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  padding: 8px;\n}\n.text-reqb {\n  background-color: #ecedf1;\n  width: 100%;\n  height: 150px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  padding: 8px;\n}\n.req-5 {\n  display: block;\n  margin: 80px auto;\n}\n.field4:focus {\n  border: 1px solid #00f5ff;\n}\n.text-req:focus {\n  border: 1px solid #00f5ff;\n}\n.text-reqb:focus {\n  border: 1px solid #00f5ff;\n}\n", ""]);
 
 	// exports
 
